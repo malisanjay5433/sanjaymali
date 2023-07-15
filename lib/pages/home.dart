@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sanjaymali/helper/app.colors.dart';
 import 'package:sanjaymali/helper/constants.dart';
+import 'package:sanjaymali/pages/contact.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 import '../helper/app.style.dart';
@@ -29,11 +30,11 @@ class _HomeState extends State<Home> {
   var menuIndex = 0;
 
   final screensList = const <Widget>[
-    Home()
+    Home(),
+    Contact()
     // AboutMe(),
     // MyServices(),
     // MyPortfolio(),
-    // ContactUs(),
     // FooterClass(),
   ];
 
@@ -56,7 +57,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: AppColors.white,
+      backgroundColor: AppColors.bgColor,
       appBar: AppBar(
         backgroundColor: AppColors.appBarColor,
         toolbarHeight: AppConstant.appBarHeight,
