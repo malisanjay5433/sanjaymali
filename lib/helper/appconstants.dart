@@ -1,5 +1,5 @@
 class AppConstant {
-  static String appName = "Sanjay Mali";
+  static String appName = "< Sanjay Mali />";
 
   //
 

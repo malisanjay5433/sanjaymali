@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:sanjaymali/helper/app.colors.dart';
 import 'package:sanjaymali/helper/constants.dart';
-import 'package:sanjaymali/pages/contact.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 import '../helper/app.style.dart';
 import '../helper/appconstants.dart';
+import 'contact.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -21,9 +21,9 @@ class _HomeState extends State<Home> {
       ScrollOffsetListener.create();
   final onMenuHover = Matrix4.identity()..scale(1.0);
   final menuItems = <String>[
-    'About',
-    'Services',
+    'About me',
     'Portfolio',
+    'Services',
     'Contact',
   ];
 
@@ -35,7 +35,6 @@ class _HomeState extends State<Home> {
     // AboutMe(),
     // MyServices(),
     // MyPortfolio(),
-    // FooterClass(),
   ];
 
   Future scrollTo({required int index}) async {
@@ -161,7 +160,6 @@ class _HomeState extends State<Home> {
   }
 
   //TODO: Can change color and radius corner can be added
-
   AnimatedContainer buildNavBarAnimatedContainer(int index, bool hover) {
     return AnimatedContainer(
       alignment: Alignment.center,

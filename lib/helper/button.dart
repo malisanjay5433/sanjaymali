@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'app.colors.dart';
-import 'app.style.dart';
+import 'package:sanjaymali/helper/app.colors.dart';
+import 'package:sanjaymali/helper/app.style.dart';
 
 class AppButtons {
   static MaterialButton buildMaterialButton({
@@ -22,7 +21,7 @@ class AppButtons {
       focusElevation: 12,
       child: Text(
         buttonName,
-        style: AppTextStyles.headerTextStyle(color: Colors.black),
+        style: AppTextStyles.headerTextStyle(),
       ),
     );
   }

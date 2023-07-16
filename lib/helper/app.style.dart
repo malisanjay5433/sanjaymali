@@ -45,6 +45,11 @@ class AppTextStyles {
         fontSize: 17, fontWeight: FontWeight.w800, color: Colors.grey);
   }
 
+  static TextStyle veryNormalStyle() {
+    return GoogleFonts.comfortaa(
+        fontSize: 16, fontWeight: FontWeight.w800, color: Colors.white);
+  }
+
   static TextStyle headingAppName(
       {double fontSize = 40, Color color = Colors.white}) {
     return GoogleFonts.rubikMoonrocks(

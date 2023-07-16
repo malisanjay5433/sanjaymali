@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sanjaymali/pages/home.dart';
+import 'package:sanjaymali/components/home.page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        // useMaterrrial3: true,
       ),
-      home: const Home(),
+      home: const HomePage(),
     );
   }
 }
